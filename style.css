@@ -1,0 +1,110 @@
+:root {
+  /* Color */
+  --yellow-color: #f7e600;
+  --brown-color: #3a1d1d;
+  --gray-color: #f4f4f4;
+  --gray-dark: #bebebe;
+  --gray-light: #f8f8f8;
+  --red-color: #e74d3c;
+  --dark-color: #5e5e5e;
+
+  /* Size */
+  --padding: 10px;
+  --padding-medium: 20px;
+  --padding-big: 30px;
+
+  /* Font Size */
+  --font-textbox: 14px;
+  --font-medium: 18px;
+  --font-title: 36px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--yellow-color);
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+header {
+  font-size: var(--font-medium);
+  font-weight: bold;
+}
+
+header nav {
+  width: 100%;
+  max-width: 500px;
+}
+
+header nav .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: fixed;
+  top: 30%;
+  left: 50%;
+
+  transform: translate(-50%, -30%);
+}
+
+section .login {
+  display: flex;
+  flex-direction: column;
+}
+
+section .bigTitle {
+  margin-top: 10%;
+  margin-bottom: var(--padding);
+  font-size: var(--font-title);
+  font-weight: bold;
+}
+
+section .login {
+  width: 300px;
+}
+
+section .login .textbox {
+  margin-top: var(--padding-medium);
+  padding-left: var(--padding);
+  font-size: var(--font-textbox);
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-dark);
+}
+
+section .login button {
+  margin-top: var(--padding-medium);
+  font-size: var(--font-textbox);
+  font-weight: bold;
+  height: 40px;
+  background-color: var(--yellow-color);
+  border-radius: 5px;
+}
