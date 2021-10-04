@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KakaoBotManager</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KakaoBotManager</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <logo>KakaoBotManager</logo>
-        <nav>
-            <ul class="menu">
-                <li class="myApplication">내 애플리케이션</li>
-                <li class="management">관리</li>
-                <li class="document">문서</li>
-                <li class="login">로그인</li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="bigTitle">KakaoBotManager</div>
-        <form class="login" action="">
-            <input type="text" class="textbox" placeholder="아이디">
-            <input type="password" class="textbox" placeholder="비밀번호">
-            <button type="submit">로그인</button>
-        </form>
-    </section>
+  <header>
+    <logo><a href="#">KakaoBotManager</a></logo>
+    <nav>
+      <ul class="menu">
+        <li class="myApplication"><a href="pages/myapplication.html">내 애플리케이션</a></li>
+        <li class="management"><a href="pages/management.html">관리</a></li>
+        <li class="document"><a href="pages/document.html">문서</a></li>
+        <li class="login"><a href="pages/login.html">로그인</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <form id="resetPassword" class="popup" action="#">
+      <p class="title">비밀번호 재설정</span>
+      <ul>
+        <li>
+          <div class="name">아이디</div>
+          <div class="value">admin</div>
+        </li>
+        <li>
+          <div class="name">비밀번호 *</div>
+          <input type="password" name="password" placeholder="새 비밀번호">
+        </li>
+        <li>
+          <div class="name">재입력 *</div>
+          <input type="password" name="confirm" placeholder="비밀번호 재입력">
+        </li>
+      </ul>
+      <p class="warn">재설정 이후 변경이 불가능합니다<br>
+        비밀번호 분실시 관리자를 통해서 비밀번호를<br>
+        초기화해야합니다
+      </p>
+      <input class="confirmButton" type="submit" value="확인">
+    </div>
+  </section>
 </body>
 </html>

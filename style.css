@@ -1,3 +1,4 @@
+/* global */
 :root {
   /* Color */
   --yellow-color: #f7e600;
@@ -17,14 +18,46 @@
   --font-textbox: 14px;
   --font-medium: 18px;
   --font-title: 36px;
+  --font-popup-title: 24px;
+  --font-warn: 16px;
 }
 
+.warn {
+  color: var(--red-color);
+  font-size: var(--font-warn);
+}
+
+.confirmButton {
+  height: 40px;
+  background-color: var(--yellow-color);
+  border: 0;
+  border-radius: 5px;
+}
+
+/* reset css */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/* navigation */
 header {
   display: flex;
   justify-content: space-between;
@@ -75,36 +108,55 @@ section {
   transform: translate(-50%, -30%);
 }
 
-section .login {
-  display: flex;
-  flex-direction: column;
+/* popup */
+.popup {
+  padding: 30px;
+  background-color: var(--gray-light);
+  border-radius: 3px;
 }
 
-section .bigTitle {
-  margin-top: 10%;
-  margin-bottom: var(--padding);
-  font-size: var(--font-title);
+.popup .title {
+  margin-bottom: 40px;
+  font-size: var(--font-popup-title);
   font-weight: bold;
 }
 
-section .login {
-  width: 300px;
+.popup .name {
+  display: inline-block;
+  font-size: var(--font-medium);
+  font-weight: bold;
 }
 
-section .login .textbox {
-  margin-top: var(--padding-medium);
-  padding-left: var(--padding);
+/* resetPassword Popup */
+#resetPassword {
+  width: 500px;
+}
+
+#resetPassword li {
+  display: block;
+  margin-bottom: 25px;
+}
+
+#resetPassword .value {
+  float: right;
+  width: 320px;
+  font-weight: bold;
+}
+
+#resetPassword input[type=password] {
+  float: right;
+  width: 320px;
+  height: 35px;
   font-size: var(--font-textbox);
-  height: 40px;
-  border-radius: 5px;
+  padding-left: 10px;
   border: 1px solid var(--gray-dark);
+  border-radius: 3px;
 }
 
-section .login button {
-  margin-top: var(--padding-medium);
-  font-size: var(--font-textbox);
-  font-weight: bold;
-  height: 40px;
-  background-color: var(--yellow-color);
-  border-radius: 5px;
+#resetPassword .warn {
+  margin: 40px 0 20px 0;
+}
+
+#resetPassword input[type=submit] {
+  width: 100%;
 }
