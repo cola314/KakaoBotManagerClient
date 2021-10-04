@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KakaoBotManager</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/css/myapplication.css">
+</head>
+<body>
+  <header>
+    <logo><a href="#">KakaoBotManager</a></logo>
+    <nav>
+      <ul class="menu">
+        <li class="myApplication"><a href="../pages/myapplication.html">내 애플리케이션</a></li>
+        <li class="management"><a href="../pages/management.html">관리</a></li>
+        <li class="document"><a href="../pages/document.html">문서</a></li>
+        <li class="login"><a href="../pages/login.html">로그인</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1 class="title">전체 애플리케이션 (2)</h1>
+    <ul class="applications">
+      <li class="plusApplication">
+        <i class="fas fa-plus-square"></i>
+        <span>애플리케이션 추가하기</span>
+      </li>
+      <li>
+        <i class="fas fa-user-circle"></i>
+        <span>Music-Chart-Bot</span>
+      </li>
+      <li>
+        <i class="fas fa-user-circle"></i>
+        <span>Echo-Bot</span>
+      </li>
+    </ul>
+  </section>
+  <form id="addApplication" class="popup" action="#">
+    <p class="title">애플리케이션 추가</span>
+    <ul>
+      <li>
+        <div class="name">앱 이름 *</div>
+        <input class="textBox" type="text" name="name" placeholder="애플리케이션 이름">
+      </li>
+      <li>
+        <div class="name">아이콘</div>
+        <img src="#" alt="이미지">
+        <div class="fileSelect">
+          <button class="cancel button">파일 선택</button>
+          <p>PNG, JPG
+            128px 크기 권장</p>
+        </div>
+      </li>
+    </ul>
+    <div class="buttons">
+      <button class="cancel button">취소</button>
+      <input class="confirm button" type="submit" value="추가">
+    </div>
+  </div>
+</body>
+</html>

@@ -19,19 +19,41 @@
   --font-medium: 18px;
   --font-title: 36px;
   --font-popup-title: 24px;
-  --font-warn: 16px;
+  --font-large: 24px;
+  --font-small: 16px;
+}
+
+.hidden {
+  display: none;
 }
 
 .warn {
   color: var(--red-color);
-  font-size: var(--font-warn);
+  font-size: var(--font-small);
 }
 
-.confirmButton {
-  height: 40px;
+.confirm {
   background-color: var(--yellow-color);
+}
+
+.cancel {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.button {
+  height: 40px;
   border: 0;
   border-radius: 5px;
+  font-size: var(--font-small);
+}
+
+.textBox {
+  height: 35px;
+  font-size: var(--font-textbox);
+  padding-left: 10px;
+  border: 1px solid var(--gray-dark);
+  border-radius: 3px;
 }
 
 /* reset css */
@@ -96,18 +118,6 @@ header nav .menu {
   justify-content: space-around;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: fixed;
-  top: 30%;
-  left: 50%;
-
-  transform: translate(-50%, -30%);
-}
-
 /* popup */
 .popup {
   padding: 30px;
@@ -121,6 +131,11 @@ section {
   font-weight: bold;
 }
 
+.popup li {
+  display: block;
+  margin-bottom: 25px;
+}
+
 .popup .name {
   display: inline-block;
   font-size: var(--font-medium);
@@ -129,12 +144,8 @@ section {
 
 /* resetPassword Popup */
 #resetPassword {
+  margin: 150px auto;
   width: 500px;
-}
-
-#resetPassword li {
-  display: block;
-  margin-bottom: 25px;
 }
 
 #resetPassword .value {
@@ -146,11 +157,6 @@ section {
 #resetPassword input[type=password] {
   float: right;
   width: 320px;
-  height: 35px;
-  font-size: var(--font-textbox);
-  padding-left: 10px;
-  border: 1px solid var(--gray-dark);
-  border-radius: 3px;
 }
 
 #resetPassword .warn {
@@ -160,3 +166,44 @@ section {
 #resetPassword input[type=submit] {
   width: 100%;
 }
+
+/* application container */
+.title {
+  font-size: var(--font-title);
+}
+
+.applications li {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  padding: 20px 25px;
+  margin: 20px 0;
+  background-color: var(--gray-color);
+  font-size: var(--font-large);
+}
+
+.applications li i {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 50px;
+}
+
+.applications li span {
+  margin: 0 0 0 55px;
+  font-weight: bold;
+}
+
+.applications .plusApplication {
+  background-color: var(--gray-dark);
+  font-size: var(--font-large);
+}
+
+.applications .plusApplication i {
+  display: inline-block;
+  color: var(--gray-light);
+}
+
+.applications .plusApplication span {
+}
+
